@@ -57,49 +57,6 @@ This project implements a VGG-style convolutional neural network with modern dee
 - ✅ **GPU Support** with automatic device detection
 - ✅ **Reproducible Results** (seed=42)
 
-## 📁 Project Structure
-
-```
-cifar10-classifier/
-├── CIFAR-10_Image_Classifier-STARTER.ipynb  # Main notebook
-├── cifar10_model_proper_split.pth           # Trained model checkpoint
-├── README.md                                 # This file
-├── requirements.txt                          # Python dependencies
-├── .gitignore                               # Git ignore rules
-├── data/                                    # CIFAR-10 dataset (auto-downloaded)
-└── docs/                                    # Additional documentation
-    ├── Rubric_Evaluation.md
-    ├── 90_Percent_Accuracy_Analysis.md
-    └── Build_vs_Buy_Recommendation_TEXT.md
-```
-
-## 🛠️ Installation
-
-### Prerequisites
-- Python 3.8+
-- CUDA-capable GPU (optional, but recommended)
-
-### Setup
-
-1. **Clone the repository:**
-```bash
-git clone https://github.com/YOUR_USERNAME/cifar10-classifier.git
-cd cifar10-classifier
-```
-
-2. **Create a virtual environment:**
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-3. **Install dependencies:**
-```bash
-pip install -r requirements.txt
-```
-
-## 🎮 Usage
-
 ### Training from Scratch
 
 Open the Jupyter notebook and run all cells:
@@ -183,14 +140,6 @@ Our model achieves 90.62% accuracy compared to the vendor's 70%, representing:
 ✅ Statistical validation (95% CI: 90.05%-91.19%)  
 ✅ Minimal overfitting (2.42% gap)  
 
-## 🚀 Future Improvements
-
-**Phase 2 Roadmap (Target: 93-95% accuracy):**
-1. Implement ResNet50 architecture → +3-4%
-2. Transfer learning with ImageNet weights → +1-2%
-3. Advanced augmentation (Mixup, Cutout) → +1-2%
-4. Ensemble methods → +2-3%
-
 **Potential Final Accuracy: 95-97%**
 
 ## 📚 Dependencies
@@ -201,40 +150,4 @@ See `requirements.txt` for full list. Key dependencies:
 - `matplotlib>=3.5.0` - Plotting and visualization
 - `numpy>=1.21.0` - Numerical computing
 
-## 📄 Documentation
-
-Additional documentation available in `docs/`:
-- **Rubric_Evaluation.md** - Complete project requirements compliance
-- **90_Percent_Accuracy_Analysis.md** - Detailed performance analysis
-- **Build_vs_Buy_Recommendation_TEXT.md** - Full business recommendation
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- CIFAR-10 dataset by Alex Krizhevsky, Vinod Nair, and Geoffrey Hinton
-- PyTorch team for the excellent deep learning framework
-- Udacity Machine Learning Engineering Nanodegree program
-
-## 👤 Author
-
-**Austin Sahl**
-- DevOps Cloud Engineer & ML Enthusiast
-- 20+ years experience in application support
-- iOS Developer (SimpliFit - Kettlebell Training App)
-
-## 📧 Contact
-
-For questions or feedback, please open an issue on GitHub.
-
 ---
-
-**Project Status:** ✅ Production Ready  
-**Last Updated:** January 2026  
-**Version:** 1.0.0
